@@ -1,3 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Para Minha Mãe</title>
+    <style>
+        body {
+            background-color: #ffe6e6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #a10000;
+            padding: 2em;
+            text-align: center;
+            position: relative;
+            overflow-x: hidden;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 1em;
+        }
+        .frase {
+            background-color: #fff0f0;
+            border: 1px solid #ffcccc;
+            border-radius: 10px;
+            margin: 1em auto;
+            padding: 1em;
+            max-width: 600px;
+            box-shadow: 2px 2px 10px rgba(255, 0, 0, 0.1);
+        }
+        .heart {
+            position: absolute;
+            top: -30px;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            transform: rotate(45deg);
+            animation: float 10s linear infinite;
+        }
+        .heart::before,
+        .heart::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .heart::before {
+            top: -10px;
+            left: 0;
+        }
+        .heart::after {
+            left: -10px;
+            top: 0;
+        }
+        @keyframes float {
+            0% { top: 100vh; opacity: 0; }
+            10% { opacity: 1; }
+            100% { top: -30px; opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Para minha mãe, cuja companhia é maior poesia que a vida tem a oferecer!</h1>
+
+    <!-- Frases -->
+    <div>
+        <!-- Aqui você pode colar as 50 frases dentro de tags <p class="frase">...</p> -->
+        <p class="frase">Tudo vale a pena quando a alma não é pequena. – Fernando Pessoa</p>
+        <p class="frase">O que vale na vida não é o ponto de partida e sim a caminhada. – Cora Coralina</p>
+        <p class="frase">A vida só é possível reinventada. – Cecília Meireles</p>
+        <p class="frase">Amar é mudar a alma de casa. – Mário Quintana</p>
+        <p class="frase">Mesmo quando tudo parece desabar, cabe a mim decidir entre rir ou chorar. – Clarice Lispector</p>
+        <p class="frase">A esperança é o perfume da alma. – Rubem Alves</p>
+        <p class="frase">A força de uma mãe é maior que as leis da natureza. – Barbara Kingsolver</p>
+        <p class="frase">A mãe compreende até o que os filhos não dizem. – Arnaldo Jabor</p>
+        <p class="frase">Mãe é aquela que pode tomar o lugar de todos, mas cujo lugar ninguém mais pode tomar. – Gaspard Mermillod</p>
+        <p class="frase">O amor de mãe é o combustível que capacita um ser humano comum a fazer o impossível. – Marion C. Garretty</p>
+        <p class="frase">A felicidade é um problema individual. Aqui, nenhum conselho é válido. Cada um deve procurar, por si, tornar-se feliz. – Sigmund Freud</p>
+        <p class="frase">Liberdade é pouco. O que eu desejo ainda não tem nome. – Clarice Lispector</p>
+        <p class="frase">A arte existe porque a vida não basta. – Ferreira Gullar</p>
+        <p class="frase">A amizade é um amor que nunca morre. – Mário Quintana</p>
+        <p class="frase">Não se pode pisar duas vezes no mesmo rio. – Heráclito</p>
+        <p class="frase">O importante não é viver, mas viver bem. – Sócrates</p>
+        <p class="frase">O mundo é um livro, e quem fica sentado em casa lê somente uma página. – Santo Agostinho</p>
+        <p class="frase">A simplicidade é o último grau de sofisticação. – Leonardo da Vinci</p>
+        <p class="frase">A vida é maravilhosa se não se tem medo dela. – Charles Chaplin</p>
+        <p class="frase">A esperança é o sonho do homem acordado. – Aristóteles</p>
+        <p class="frase">Quem tem um porquê enfrenta qualquer como. – Friedrich Nietzsche</p>
+        <p class="frase">O coração tem razões que a própria razão desconhece. – Blaise Pascal</p>
+        <p class="frase">Tudo o que é feito por amor está além do bem e do mal. – Friedrich Nietzsche</p>
+        <p class="frase">A vida é feita de escolhas. Quando você dá um passo à frente, inevitavelmente alguma coisa fica para trás. – Caio Fernando Abreu</p>
+        <p class="frase">Não ser inútil já é um elogio. – Machado de Assis</p>
+        <p class="frase">A vida é a arte do encontro, embora haja tanto desencontro pela vida. – Vinícius de Moraes</p>
+        <p class="frase">Viver é a coisa mais rara do mundo. A maioria das pessoas apenas existe. – Oscar Wilde</p>
+        <p class="frase">Se queres ser universal, começa por pintar a tua aldeia. – Tolstói</p>
+        <p class="frase">A alma é essa coisa que nos pergunta se a alma existe. – Mário Quintana</p>
+        <p class="frase">É preciso amar as pessoas como se não houvesse amanhã. – Renato Russo</p>
+        <p class="frase">A poesia é a música da alma, e, sobretudo, de almas grandes e sentimentais. – Voltaire</p>
+        <p class="frase">Nada se pode criar sem solidão. – Pablo Picasso</p>
+        <p class="frase">A imaginação é mais importante que o conhecimento. – Albert Einstein</p>
+        <p class="frase">Somos feitos de carne, mas temos de viver como se fôssemos de ferro. – Sigmund Freud</p>
+        <p class="frase">O que é um amigo? Uma alma que habita dois corpos. – Aristóteles</p>
+        <p class="frase">A medida do amor é amar sem medida. – Santo Agostinho</p>
+        <p class="frase">A poesia não se entrega a quem a define. – Mário Quintana</p>
+        <p class="frase">A mente que se abre a uma nova ideia jamais voltará ao seu tamanho original. – Albert Einstein</p>
+        <p class="frase">O homem é do tamanho do seu sonho. – Fernando Pessoa</p>
+        <p class="frase">A beleza das coisas existe no espírito de quem as contempla. – David Hume</p>
+        <p class="frase">As mães seguram as mãos dos filhos por um tempo, mas seus corações para sempre. – Provérbio</p>
+        <p class="frase">Deus não podia estar em todos os lugares, então criou as mães. – Provérbio Judaico</p>
+        <p class="frase">O amor de mãe por seu filho é diferente de qualquer outra coisa no mundo. – Agatha Christie</p>
+        <p class="frase">O coração de uma mãe é um abismo profundo em cujo fundo você sempre encontra perdão. – Honoré de Balzac</p>
+        <p class="frase">O amor é a força mais sutil do mundo. – Mahatma Gandhi</p>
+        <p class="frase">Amor de mãe é o combustível que capacita um ser humano comum a fazer o impossível. – Marion C. Garretty</p>
+        <p class="frase">Não há no mundo exagero mais belo que o da gratidão de uma mãe. – Jean Gaston Bardet</p>
+        <p class="frase">Todas as mães são ricas quando amam seus filhos. Não existe pobreza para quem ama. – Camilo Castelo Branco</p>
+        <p class="frase">O amor materno é o véu de luz mais suave que envolve nossa existência. – Friedrich Schiller</p>
+    </div>
+
+    <!-- Corações flutuando -->
+    <div class="heart" style="left: 10vw; animation-delay: 0s;"></div>
+    <div class="heart" style="left: 30vw; animation-delay: 1.5s;"></div>
+    <div class="heart" style="left: 50vw; animation-delay: 3s;"></div>
+    <div class="heart" style="left: 70vw; animation-delay: 4.5s;"></div>
+    <div class="heart" style="left: 90vw; animation-delay: 2s;"></div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Para Minha Mãe</title>
+    <style>
+        body {
+            background-color: #ffe6e6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #a10000;
+            padding: 2em;
+            text-align: center;
+            position: relative;
+            overflow-x: hidden;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 1em;
+        }
+        .frase {
+            background-color: #fff0f0;
+            border: 1px solid #ffcccc;
+            border-radius: 10px;
+            margin: 1em auto;
+            padding: 1em;
+            max-width: 600px;
+            box-shadow: 2px 2px 10px rgba(255, 0, 0, 0.1);
+        }
+        .heart {
+            position: absolute;
+            top: -30px;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            transform: rotate(45deg);
+            animation: float 10s linear infinite;
+        }
+        .heart::before,
+        .heart::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .heart::before {
+            top: -10px;
+            left: 0;
+        }
+        .heart::after {
+            left: -10px;
+            top: 0;
+        }
+        @keyframes float {
+            0% { top: 100vh; opacity: 0; }
+            10% { opacity: 1; }
+            100% { top: -30px; opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Para minha mãe, cuja companhia é maior poesia que a vida tem a oferecer!</h1>
+
+    <!-- Frases -->
+    <div>
+        <!-- Aqui você pode colar as 50 frases dentro de tags <p class="frase">...</p> -->
+        <p class="frase">Tudo vale a pena quando a alma não é pequena. – Fernando Pessoa</p>
+        <p class="frase">O que vale na vida não é o ponto de partida e sim a caminhada. – Cora Coralina</p>
+        <p class="frase">A vida só é possível reinventada. – Cecília Meireles</p>
+        <p class="frase">Amar é mudar a alma de casa. – Mário Quintana</p>
+        <p class="frase">Mesmo quando tudo parece desabar, cabe a mim decidir entre rir ou chorar. – Clarice Lispector</p>
+        <p class="frase">A esperança é o perfume da alma. – Rubem Alves</p>
+        <p class="frase">A força de uma mãe é maior que as leis da natureza. – Barbara Kingsolver</p>
+        <p class="frase">A mãe compreende até o que os filhos não dizem. – Arnaldo Jabor</p>
+        <p class="frase">Mãe é aquela que pode tomar o lugar de todos, mas cujo lugar ninguém mais pode tomar. – Gaspard Mermillod</p>
+        <p class="frase">O amor de mãe é o combustível que capacita um ser humano comum a fazer o impossível. – Marion C. Garretty</p>
+        <p class="frase">A felicidade é um problema individual. Aqui, nenhum conselho é válido. Cada um deve procurar, por si, tornar-se feliz. – Sigmund Freud</p>
+        <p class="frase">Liberdade é pouco. O que eu desejo ainda não tem nome. – Clarice Lispector</p>
+        <p class="frase">A arte existe porque a vida não basta. – Ferreira Gullar</p>
+        <p class="frase">A amizade é um amor que nunca morre. – Mário Quintana</p>
+        <p class="frase">Não se pode pisar duas vezes no mesmo rio. – Heráclito</p>
+        <p class="frase">O importante não é viver, mas viver bem. – Sócrates</p>
+        <p class="frase">O mundo é um livro, e quem fica sentado em casa lê somente uma página. – Santo Agostinho</p>
+        <p class="frase">A simplicidade é o último grau de sofisticação. – Leonardo da Vinci</p>
+        <p class="frase">A vida é maravilhosa se não se tem medo dela. – Charles Chaplin</p>
+        <p class="frase">A esperança é o sonho do homem acordado. – Aristóteles</p>
+        <p class="frase">Quem tem um porquê enfrenta qualquer como. – Friedrich Nietzsche</p>
+        <p class="frase">O coração tem razões que a própria razão desconhece. – Blaise Pascal</p>
+        <p class="frase">Tudo o que é feito por amor está além do bem e do mal. – Friedrich Nietzsche</p>
+        <p class="frase">A vida é feita de escolhas. Quando você dá um passo à frente, inevitavelmente alguma coisa fica para trás. – Caio Fernando Abreu</p>
+        <p class="frase">Não ser inútil já é um elogio. – Machado de Assis</p>
+        <p class="frase">A vida é a arte do encontro, embora haja tanto desencontro pela vida. – Vinícius de Moraes</p>
+        <p class="frase">Viver é a coisa mais rara do mundo. A maioria das pessoas apenas existe. – Oscar Wilde</p>
+        <p class="frase">Se queres ser universal, começa por pintar a tua aldeia. – Tolstói</p>
+        <p class="frase">A alma é essa coisa que nos pergunta se a alma existe. – Mário Quintana</p>
+        <p class="frase">É preciso amar as pessoas como se não houvesse amanhã. – Renato Russo</p>
+        <p class="frase">A poesia é a música da alma, e, sobretudo, de almas grandes e sentimentais. – Voltaire</p>
+        <p class="frase">Nada se pode criar sem solidão. – Pablo Picasso</p>
+        <p class="frase">A imaginação é mais importante que o conhecimento. – Albert Einstein</p>
+        <p class="frase">Somos feitos de carne, mas temos de viver como se fôssemos de ferro. – Sigmund Freud</p>
+        <p class="frase">O que é um amigo? Uma alma que habita dois corpos. – Aristóteles</p>
+        <p class="frase">A medida do amor é amar sem medida. – Santo Agostinho</p>
+        <p class="frase">A poesia não se entrega a quem a define. – Mário Quintana</p>
+        <p class="frase">A mente que se abre a uma nova ideia jamais voltará ao seu tamanho original. – Albert Einstein</p>
+        <p class="frase">O homem é do tamanho do seu sonho. – Fernando Pessoa</p>
+        <p class="frase">A beleza das coisas existe no espírito de quem as contempla. – David Hume</p>
+        <p class="frase">As mães seguram as mãos dos filhos por um tempo, mas seus corações para sempre. – Provérbio</p>
+        <p class="frase">Deus não podia estar em todos os lugares, então criou as mães. – Provérbio Judaico</p>
+        <p class="frase">O amor de mãe por seu filho é diferente de qualquer outra coisa no mundo. – Agatha Christie</p>
+        <p class="frase">O coração de uma mãe é um abismo profundo em cujo fundo você sempre encontra perdão. – Honoré de Balzac</p>
+        <p class="frase">O amor é a força mais sutil do mundo. – Mahatma Gandhi</p>
+        <p class="frase">Amor de mãe é o combustível que capacita um ser humano comum a fazer o impossível. – Marion C. Garretty</p>
+        <p class="frase">Não há no mundo exagero mais belo que o da gratidão de uma mãe. – Jean Gaston Bardet</p>
+        <p class="frase">Todas as mães são ricas quando amam seus filhos. Não existe pobreza para quem ama. – Camilo Castelo Branco</p>
+        <p class="frase">O amor materno é o véu de luz mais suave que envolve nossa existência. – Friedrich Schiller</p>
+    </div>
+
+    <!-- Corações flutuando -->
+    <div class="heart" style="left: 10vw; animation-delay: 0s;"></div>
+    <div class="heart" style="left: 30vw; animation-delay: 1.5s;"></div>
+    <div class="heart" style="left: 50vw; animation-delay: 3s;"></div>
+    <div class="heart" style="left: 70vw; animation-delay: 4.5s;"></div>
+    <div class="heart" style="left: 90vw; animation-delay: 2s;"></div>
+</body>
+</html>
 
 <!DOCTYPE html>
 <html lang="pt-br">
