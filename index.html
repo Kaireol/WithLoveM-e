@@ -41,6 +41,7 @@
       cursor: pointer;
       font-size: 1em;
       margin-top: 2em;
+      margin-bottom: 3em; /* Adiciona espaço abaixo do botão */
     }
 
     button:hover {
@@ -85,10 +86,19 @@
 
     /* Estilo para a imagem da mãe */
     .foto-mae {
-      max-width: 400px; /* Ajuste o tamanho conforme necessário */
+      max-width: 300px; /* Reduzi um pouco o tamanho */
       border-radius: 15px;
-      margin-top: 3em; /* Adiciona um espaço acima da imagem */
-      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave */
+      margin-top: 2em;
+      margin-bottom: 1em; /* Adiciona espaço abaixo da imagem */
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Suavizei a sombra */
+      opacity: 0.8; /* Diminui um pouco o destaque da imagem */
+    }
+
+    .legenda-foto {
+      font-size: 0.9em;
+      color: #770000;
+      font-style: italic;
+      margin-bottom: 4em; /* Adiciona espaço abaixo da legenda */
     }
   </style>
 </head>
@@ -163,5 +173,6 @@
   <div class="heart" style="left:90%; animation-delay: 5s;"></div>
 
   <img src="Screenshot_20250503-153513~2.png" alt="Foto linda de minha mãe" class="foto-mae">
+  <p class="legenda-foto">Em cada sorriso, uma história; em cada abraço, um lar. Família, nosso maior presente.</p>
 </body>
 </html>
