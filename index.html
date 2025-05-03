@@ -9,14 +9,14 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #a10000;
       text-align: center;
-      padding: 2em;
+      padding: 1em;
       overflow: hidden;
       position: relative;
     }
 
     h1 {
       font-size: 1.8em;
-      margin-bottom: 2em;
+      margin-bottom: 1.5em;
     }
 
     #frase {
@@ -24,7 +24,7 @@
       font-size: 1.2em;
       background-color: #fff0f0;
       padding: 1em;
-      margin: 0 auto 1em;
+      margin: 0 auto 2em;
       border-radius: 10px;
       max-width: 500px;
       border: 1px solid #ffcccc;
@@ -40,6 +40,7 @@
       border-radius: 10px;
       cursor: pointer;
       font-size: 1em;
+      margin-top: 2em;
     }
 
     button:hover {
@@ -81,10 +82,22 @@
       10% { opacity: 1; }
       100% { transform: translateY(-120vh) rotate(45deg); opacity: 0; }
     }
+
+    /* Espaço para a imagem - altere conforme necessário */
+    .foto {
+      max-width: 100%;
+      border-radius: 15px;
+      margin-bottom: 2em;
+      /* Reserve espaço para adicionar a imagem da sua mãe aqui */
+    }
   </style>
 </head>
 <body>
   <h1>Para minha mãe, cuja companhia é maior poesia que a vida tem a oferecer!</h1>
+  
+  <!-- Espaço para a imagem da sua mãe -->
+  <img src="images/foto-mãe.jpg" alt="Foto linda de minha mãe" class="foto">
+  
   <div id="frase">Clique no botão para ver uma frase!</div>
   <button onclick="mostrarFrase()">Nova frase</button>
 
@@ -92,37 +105,51 @@
     const frases = [
       "Tudo vale a pena quando a alma não é pequena. – Fernando Pessoa",
       "O que vale na vida não é o ponto de partida e sim a caminhada. – Cora Coralina",
-      "A vida só é possível reinventada. – Cecília Meireles",
-      "Amar é mudar a alma de casa. – Mário Quintana",
-      "Mesmo quando tudo parece desabar, cabe a mim decidir entre rir ou chorar. – Clarice Lispector",
-      "A esperança é o perfume da alma. – Rubem Alves",
-      "A força de uma mãe é maior que as leis da natureza. – Barbara Kingsolver",
-      "A mãe compreende até o que os filhos não dizem. – Arnaldo Jabor",
-      "Mãe é aquela que pode tomar o lugar de todos, mas cujo lugar ninguém mais pode tomar. – Gaspard Mermillod",
-      "O amor de mãe é o combustível que capacita um ser humano comum a fazer o impossível. – Marion C. Garretty",
-      "Liberdade é pouco. O que eu desejo ainda não tem nome. – Clarice Lispector",
-      "A arte existe porque a vida não basta. – Ferreira Gullar",
-      "A amizade é um amor que nunca morre. – Mário Quintana",
-      "Não se pode pisar duas vezes no mesmo rio. – Heráclito",
-      "O importante não é viver, mas viver bem. – Sócrates",
-      "A vida é maravilhosa se não se tem medo dela. – Charles Chaplin",
-      "Quem tem um porquê enfrenta qualquer como. – Nietzsche",
-      "O coração tem razões que a própria razão desconhece. – Blaise Pascal",
-      "A vida é a arte do encontro. – Vinícius de Moraes",
-      "Viver é a coisa mais rara do mundo. A maioria apenas existe. – Oscar Wilde",
-      "A simplicidade é o último grau de sofisticação. – Leonardo da Vinci",
-      "O que é um amigo? Uma alma que habita dois corpos. – Aristóteles",
-      "A medida do amor é amar sem medida. – Santo Agostinho",
-      "A poesia não se entrega a quem a define. – Mário Quintana",
-      "O homem é do tamanho do seu sonho. – Fernando Pessoa",
-      "As mães seguram as mãos dos filhos por um tempo, mas seus corações para sempre. – Provérbio",
-      "Deus não podia estar em todos os lugares, então criou as mães. – Provérbio Judaico",
-      "O amor de mãe é diferente de qualquer outra coisa no mundo. – Agatha Christie",
-      "O coração de uma mãe é um abismo onde sempre se encontra perdão. – Balzac",
-      "Amor de mãe capacita o impossível. – Marion Garretty",
-      "Não há exagero mais belo que a gratidão de uma mãe. – Jean Gaston Bardet",
-      "Todas as mães são ricas quando amam seus filhos. – Camilo Castelo Branco",
-      "O amor materno é o véu de luz da existência. – Friedrich Schiller"
+      "A vida é feita de escolhas. – Ana Maria Braga",
+      "A felicidade é a certeza de que a nossa vida não está se passando inutilmente. – Cora Coralina",
+      "O amor é a única coisa que cresce à medida que se reparte. – Antoine de Saint-Exupéry",
+      "A amizade é a base de todo o amor verdadeiro. – Rainer Maria Rilke",
+      "O essencial é invisível aos olhos. – Antoine de Saint-Exupéry",
+      "Cada um é responsável por sua própria felicidade. – Dalai Lama",
+      "A felicidade não é algo pronto. Ela vem de suas próprias ações. – Dalai Lama",
+      "A vida é uma jornada, não um destino. – Ralph Waldo Emerson",
+      "O segredo da felicidade é a liberdade, e o segredo da liberdade é a coragem. – Tucídides",
+      "Viver é a coisa mais rara do mundo. A maioria das pessoas existe, isso é tudo. – Oscar Wilde",
+      "Somos do tamanho dos nossos sonhos. – Fernando Pessoa",
+      "Você nunca sabe a força que tem, até que a sua única alternativa é ser forte. – Johnny Depp",
+      "A vida é 10% o que acontece com você e 90% como você reage. – Charles R. Swindoll",
+      "É preciso ter o caos dentro de si para gerar uma estrela dançante. – Friedrich Nietzsche",
+      "O verdadeiro amor nunca se desgasta. Quanto mais se dá, mais se tem. – Antoine de Saint-Exupéry",
+      "A vida é o que acontece quando você está ocupado fazendo outros planos. – John Lennon",
+      "O melhor ainda está por vir. – Audrey Hepburn",
+      "Não chore porque acabou, sorria porque aconteceu. – Dr. Seuss",
+      "A gratidão é a memória do coração. – Jean-Baptiste Massieu",
+      "O que a lagarta chama de fim do mundo, o mestre chama de borboleta. – Richard Bach",
+      "Quando se ama, não é preciso entender o que se passa lá fora, pois tudo passa a acontecer dentro de nós. – Paulo Coelho",
+      "O amor é a força mais poderosa do universo. – Mahatma Gandhi",
+      "A maior de todas as vitórias é a vitória sobre si mesmo. – Platão",
+      "O bom da vida é saber que cada dia é uma nova oportunidade. – William Shakespeare",
+      "O amor é o que há de mais simples e complexo na vida. – Vinícius de Moraes",
+      "O melhor caminho é sempre o que leva ao coração. – Ralph Waldo Emerson",
+      "A vida é uma obra de arte. – Chuck Palahniuk",
+      "A paz começa com um sorriso. – Madre Teresa",
+      "Não tenha medo de ser você mesmo. – Ellen DeGeneres",
+      "A felicidade não é algo pronto. Ela vem de suas próprias ações. – Dalai Lama",
+      "Em cada ato de bondade, você semeia felicidade. – Martha Beck",
+      "Acredite em você e tudo será possível. – Emily Dickinson",
+      "A vida é feita de pequenos momentos. – Albert Einstein",
+      "Você é a razão pela qual eu acredito em amor. – Anônimo",
+      "A vida é uma única jornada, não uma corrida. – Anônimo",
+      "Cada passo em frente é uma vitória. – Anônimo",
+      "O que você faz hoje pode melhorar todos os seus amanhãs. – Ralph Marston",
+      "O amor não é sobre o que você diz, mas sobre o que você faz. – Anônimo",
+      "A felicidade é um perfume que você não pode derramar sobre os outros sem que caia algumas gotas sobre você. – Ralph Waldo Emerson",
+      "É a nossa luz, não a nossa escuridão, que mais nos assusta. – Marianne Williamson",
+      "O amor não é o que você vê, mas o que você sente. – Anônimo",
+      "Cada momento é um novo começo. – T.S. Eliot",
+      "Viva cada momento como se fosse o último. – Anônimo",
+      "O que você semear, você colherá. – Buda",
+      "O futuro pertence àqueles que acreditam na beleza dos seus sonhos. – Eleanor Roosevelt"
     ];
 
     function mostrarFrase() {
