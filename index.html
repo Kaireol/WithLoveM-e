@@ -12,6 +12,10 @@
       padding: 1em;
       overflow: hidden;
       position: relative;
+      display: flex;
+      flex-direction: column; /* Alinha os itens verticalmente */
+      align-items: center; /* Centraliza os itens horizontalmente */
+      min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
     }
 
     h1 {
@@ -50,7 +54,6 @@
 
     .heart {
       position: absolute;
-      top: 100vh;
       width: 20px;
       height: 20px;
       background-color: red;
@@ -88,7 +91,7 @@
     .foto-mae {
       max-width: 300px; /* Reduzi um pouco o tamanho */
       border-radius: 15px;
-      margin-top: 2em;
+      margin-top: auto; /* Empurra a imagem para o final */
       margin-bottom: 1em; /* Adiciona espaço abaixo da imagem */
       box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Suavizei a sombra */
       opacity: 0.8; /* Diminui um pouco o destaque da imagem */
@@ -98,8 +101,16 @@
       font-size: 0.9em;
       color: #770000;
       font-style: italic;
-      margin-bottom: 4em; /* Adiciona espaço abaixo da legenda */
+      margin-bottom: 2em; /* Adiciona espaço abaixo da legenda */
     }
+
+    /* Posicionamento dos corações */
+    .heart:nth-child(1) { left: 10%; animation-delay: 0s; }
+    .heart:nth-child(2) { left: 25%; animation-delay: 2s; }
+    .heart:nth-child(3) { left: 40%; animation-delay: 4s; }
+    .heart:nth-child(4) { left: 60%; animation-delay: 1s; }
+    .heart:nth-child(5) { left: 75%; animation-delay: 3s; }
+    .heart:nth-child(6) { left: 90%; animation-delay: 5s; }
   </style>
 </head>
 <body>
@@ -165,14 +176,15 @@
     }
   </script>
 
-  <div class="heart" style="left:10%; animation-delay: 0s;"></div>
-  <div class="heart" style="left:25%; animation-delay: 2s;"></div>
-  <div class="heart" style="left:40%; animation-delay: 4s;"></div>
-  <div class="heart" style="left:60%; animation-delay: 1s;"></div>
-  <div class="heart" style="left:75%; animation-delay: 3s;"></div>
-  <div class="heart" style="left:90%; animation-delay: 5s;"></div>
+  <div class="heart"></div>
+  <div class="heart"></div>
+  <div class="heart"></div>
+  <div class="heart"></div>
+  <div class="heart"></div>
+  <div class="heart"></div>
 
-  <img src="Screenshot_20250503-153513~2.png" alt="Foto linda de minha mãe" class="foto-mae">
-  <p class="legenda-foto">Em cada sorriso, uma história; em cada abraço, um lar. Família, nosso maior presente.</p>
+  <div style="margin-top: auto;"> <img src="Screenshot_20250503-153513~2.png" alt="Foto linda de minha mãe" class="foto-mae">
+    <p class="legenda-foto">Em cada sorriso, uma história; em cada abraço, um lar. Família, nosso maior presente.</p>
+  </div>
 </body>
 </html>
