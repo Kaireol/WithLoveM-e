@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Para Minha Mãe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #fff0f0;
+            color: #660000;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        p.intro {
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        .mensagem {
+            font-size: 1.2em;
+            background-color: #ffe5e5;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 500px;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+        }
+        button {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 1em;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e60000;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #aa0000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Para Minha Mãe</h1>
+    <p class="intro">Cuja companhia é a maior poesia que a vida tem a oferecer.</p>
+    <div class="mensagem" id="mensagem">Clique no botão para receber uma mensagem especial.</div>
+    <button onclick="novaMensagem()">Nova mensagem</button>
+    <footer>
+        Com amor, do seu filho.
+    </footer>
+    <script>
+        const mensagens = [
+            "Tudo vale a pena quando a alma não é pequena. – Fernando Pessoa",
+            "O que vale na vida não é o ponto de partida e sim a caminhada. – Cora Coralina",
+            "A vida só é possível reinventada. – Cecília Meireles",
+            "Amar é mudar a alma de casa. – Mário Quintana",
+            "Mesmo quando tudo parece desabar, cabe a mim decidir entre rir ou chorar. – Clarice Lispector",
+            "A esperança é o perfume da alma. – Rubem Alves",
+            "A força de uma mãe é maior que as leis da natureza. – Barbara Kingsolver",
+            "Nunca se esqueça: você é mais forte do que pensa, e mais amada do que imagina."
+        ];
+        function novaMensagem() {
+            const randomIndex = Math.floor(Math.random() * mensagens.length);
+            document.getElementById("mensagem").textContent = mensagens[randomIndex];
+        }
+    </script>
+</body>
+</html>
