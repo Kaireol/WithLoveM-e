@@ -1,6 +1,148 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <meta charset="UTF-8" />
+  <title>Para Minha Mãe</title>
+  <style>
+    body {
+      background-color: #ffe6e6;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #a10000;
+      text-align: center;
+      padding: 2em;
+      overflow: hidden;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 1.8em;
+      margin-bottom: 2em;
+    }
+
+    #frase {
+      font-style: italic;
+      font-size: 1.2em;
+      background-color: #fff0f0;
+      padding: 1em;
+      margin: 0 auto 1em;
+      border-radius: 10px;
+      max-width: 500px;
+      border: 1px solid #ffcccc;
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+      min-height: 70px;
+    }
+
+    button {
+      background-color: #ff4d4d;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    button:hover {
+      background-color: #e60000;
+    }
+
+    .heart {
+      position: absolute;
+      top: 100vh;
+      width: 20px;
+      height: 20px;
+      background-color: red;
+      transform: rotate(45deg);
+      animation: float 10s linear infinite;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: red;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: -10px;
+      top: 0;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) rotate(45deg); opacity: 0; }
+      10% { opacity: 1; }
+      100% { transform: translateY(-120vh) rotate(45deg); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Para minha mãe, cuja companhia é maior poesia que a vida tem a oferecer!</h1>
+  <div id="frase">Clique no botão para ver uma frase!</div>
+  <button onclick="mostrarFrase()">Nova frase</button>
+
+  <script>
+    const frases = [
+      "Tudo vale a pena quando a alma não é pequena. – Fernando Pessoa",
+      "O que vale na vida não é o ponto de partida e sim a caminhada. – Cora Coralina",
+      "A vida só é possível reinventada. – Cecília Meireles",
+      "Amar é mudar a alma de casa. – Mário Quintana",
+      "Mesmo quando tudo parece desabar, cabe a mim decidir entre rir ou chorar. – Clarice Lispector",
+      "A esperança é o perfume da alma. – Rubem Alves",
+      "A força de uma mãe é maior que as leis da natureza. – Barbara Kingsolver",
+      "A mãe compreende até o que os filhos não dizem. – Arnaldo Jabor",
+      "Mãe é aquela que pode tomar o lugar de todos, mas cujo lugar ninguém mais pode tomar. – Gaspard Mermillod",
+      "O amor de mãe é o combustível que capacita um ser humano comum a fazer o impossível. – Marion C. Garretty",
+      "Liberdade é pouco. O que eu desejo ainda não tem nome. – Clarice Lispector",
+      "A arte existe porque a vida não basta. – Ferreira Gullar",
+      "A amizade é um amor que nunca morre. – Mário Quintana",
+      "Não se pode pisar duas vezes no mesmo rio. – Heráclito",
+      "O importante não é viver, mas viver bem. – Sócrates",
+      "A vida é maravilhosa se não se tem medo dela. – Charles Chaplin",
+      "Quem tem um porquê enfrenta qualquer como. – Nietzsche",
+      "O coração tem razões que a própria razão desconhece. – Blaise Pascal",
+      "A vida é a arte do encontro. – Vinícius de Moraes",
+      "Viver é a coisa mais rara do mundo. A maioria apenas existe. – Oscar Wilde",
+      "A simplicidade é o último grau de sofisticação. – Leonardo da Vinci",
+      "O que é um amigo? Uma alma que habita dois corpos. – Aristóteles",
+      "A medida do amor é amar sem medida. – Santo Agostinho",
+      "A poesia não se entrega a quem a define. – Mário Quintana",
+      "O homem é do tamanho do seu sonho. – Fernando Pessoa",
+      "As mães seguram as mãos dos filhos por um tempo, mas seus corações para sempre. – Provérbio",
+      "Deus não podia estar em todos os lugares, então criou as mães. – Provérbio Judaico",
+      "O amor de mãe é diferente de qualquer outra coisa no mundo. – Agatha Christie",
+      "O coração de uma mãe é um abismo onde sempre se encontra perdão. – Balzac",
+      "Amor de mãe capacita o impossível. – Marion Garretty",
+      "Não há exagero mais belo que a gratidão de uma mãe. – Jean Gaston Bardet",
+      "Todas as mães são ricas quando amam seus filhos. – Camilo Castelo Branco",
+      "O amor materno é o véu de luz da existência. – Friedrich Schiller"
+    ];
+
+    function mostrarFrase() {
+      const index = Math.floor(Math.random() * frases.length);
+      document.getElementById("frase").innerText = frases[index];
+    }
+  </script>
+
+  <!-- Corações animados -->
+  <div class="heart" style="left:10%; animation-delay: 0s;"></div>
+  <div class="heart" style="left:25%; animation-delay: 2s;"></div>
+  <div class="heart" style="left:40%; animation-delay: 4s;"></div>
+  <div class="heart" style="left:60%; animation-delay: 1s;"></div>
+  <div class="heart" style="left:75%; animation-delay: 3s;"></div>
+  <div class="heart" style="left:90%; animation-delay: 5s;"></div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
   <meta charset="UTF-8">
   <title>Para Minha Mãe</title>
   <style>
